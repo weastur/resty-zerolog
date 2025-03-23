@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Asset Manager"
+version: "v0.0.0-dev1"
+type: software
+authors:
+  - family-names: "Sapezhka"
+    given-names: "Pavel"
+doi: 10.5281/zenodo.1234
+date-released: 2025-03-23
+url: "https://github.com/weastur/resty-zerolog"
+repository-code: "https://github.com/weastur/resty-zerolog"
+abstract: >-
+  A simple wrapper for zerolog to use it as an implementation of Logger for Resty.
+keywords:
+  - go
+  - zerolog
+  - resty
+  - logging
+license: MPL-2.0
