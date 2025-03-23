@@ -1,6 +1,6 @@
 github.com/rs/zerolog v1.0.0 h1:nyPrZaY4d0BlOTLz7F6eBx4GX7IuaszHwTAOnlK+BfQ=
 github.com/rs/zerolog v1.0.0/go.mod h1:YbFCdg8HfsridGWAh22vktObvhZbQsZXe4/zB0OKkWU=
-golang.org/x/net v0.33.0 h1:74SYHlV8BIgHIFC/LrYkOGIwL19eTYXQ5wc6TBuO36I=
-golang.org/x/net v0.33.0/go.mod h1:HXLR5J+9DxmrqMwG9qjGCxZ+zKXxBru04zlTvWlWuN4=
+golang.org/x/net v0.36.0 h1:vWF2fRbw4qslQsQzgFqZff+BItCvGFQqKzKIzx1rmoA=
+golang.org/x/net v0.36.0/go.mod h1:bFmbeoIPfrw4sMHNhb4J9f6+tPziuGjq7Jk/38fxi1I=
 resty.dev/v3 v3.0.0-beta.1 h1:EFhr5p7fbqbz6QKQFTUK7OF+rH//zEdihdVIA4t80VQ=
 resty.dev/v3 v3.0.0-beta.1/go.mod h1:OgkqiPvTDtOuV4MGZuUDhwOpkY8enjOsjjMzeOHefy4=
