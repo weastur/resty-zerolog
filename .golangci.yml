@@ -1,46 +1,65 @@
----
+version: "2"
 run:
   modules-download-mode: readonly
 linters:
-  enable-all: true
+  default: all
   disable:
     - exhaustruct
     - gochecknoglobals
     - gochecknoinits
-    - ireturn
-    - testpackage
-    - tenv
-    - gci
     - godot
+    - ireturn
     - reassign
-
-linters-settings:
-  depguard:
-    rules:
-      main:
-        list-mode: strict
-        allow:
-          - $gostd
-          - github.com/weastur
-          - github.com/rs/zerolog
-          - resty.dev/v3
-        deny:
-          - pkg: "math/rand$"
-            desc: use math/rand/v2
-  varnamelen:
-    ignore-decls:
-      - t testing.T
-      - e error
-      - i int
-      - T any
-      - w http.ResponseWriter
-      - r *http.Request
-      - wg sync.WaitGroup
-  forbidigo:
-    forbid:
-      - ^print(ln)?$
-    exclude-godoc-examples: true
-    analyze-types: true
-  paralleltest:
-    ignore-missing: true
-    ignore-missing-subtests: true
+    - testpackage
+  settings:
+    depguard:
+      rules:
+        main:
+          list-mode: strict
+          allow:
+            - $gostd
+            - github.com/weastur
+            - github.com/rs/zerolog
+            - resty.dev/v3
+          deny:
+            - pkg: math/rand$
+              desc: use math/rand/v2
+    forbidigo:
+      forbid:
+        - pattern: ^print(ln)?$
+      exclude-godoc-examples: true
+      analyze-types: true
+    paralleltest:
+      ignore-missing: true
+      ignore-missing-subtests: true
+    varnamelen:
+      ignore-decls:
+        - t testing.T
+        - e error
+        - i int
+        - T any
+        - w http.ResponseWriter
+        - r *http.Request
+        - wg sync.WaitGroup
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gofmt
+    - gofumpt
+    - goimports
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
