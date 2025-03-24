@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ensure command",
+      "type": "go",
+      "request": "launch",
+      "mode": "exec",
+      "program": "${workspaceFolder}/_example/bin/example",
+      "args": [
+        "ensure"
+      ],
+      "preLaunchTask": "build"
+    }
+  ]
+}
