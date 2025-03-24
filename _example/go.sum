@@ -11,8 +11,8 @@ github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/rs/xid v1.6.0/go.mod h1:7XoLgs4eV+QndskICGsho+ADou8ySMSjJKDIan90Nz0=
 github.com/rs/zerolog v1.34.0 h1:k43nTLIwcTVQAncfCw4KZ2VY6ukYoZaBPNOE8txlOeY=
 github.com/rs/zerolog v1.34.0/go.mod h1:bJsvje4Z08ROH4Nhs5iH600c3IkWhwp44iRc54W6wYQ=
-github.com/weastur/resty-zerolog v0.0.0-dev1 h1:ilUpKOS0OLhhjyKTJyNC8/yRPE27FwBJFtxwRd4SiAU=
-github.com/weastur/resty-zerolog v0.0.0-dev1/go.mod h1:8zSrE7w05Hs0ll6U3qIbfGiRbmTpFHdAFajdcq92EXw=
+github.com/weastur/resty-zerolog v1.0.0 h1:MSEb2jYXGKahhXXH/IL3Dw7iLU2IcjxKX3kMmNunLA0=
+github.com/weastur/resty-zerolog v1.0.0/go.mod h1:8zSrE7w05Hs0ll6U3qIbfGiRbmTpFHdAFajdcq92EXw=
 golang.org/x/net v0.37.0 h1:1zLorHbz+LYj7MQlSf1+2tPIIgibq2eL5xkrGk6f+2c=
 golang.org/x/net v0.37.0/go.mod h1:ivrbrMbzFq5J41QOQh0siUuly180yBYtLp+CKbEaFx8=
 golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
