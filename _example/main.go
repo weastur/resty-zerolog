@@ -1,3 +1,4 @@
+// main package is used to demonstrate how to use resty-zerolog with resty
 package main
 
 import (
