@@ -47,6 +47,10 @@ client.SetLogger(restyzerolog.New(log.Logger))
 Despite it's extremely simple, you can refer to the [example](./_example/) and
 [godoc](https://pkg.go.dev/github.com/weastur/resty-zerolog) to see a bit more.
 
+## Contributing
+
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for details on how to contribute to this project.
+
 ## Security
 
 Refer to the [SECURITY.md](SECURITY.md) file for more information.
