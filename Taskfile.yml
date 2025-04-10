@@ -1,0 +1,59 @@
+version: "3"
+
+vars:
+  GOLANGCI_LINT_VERSION: "v2.0.2"
+
+tasks:
+  build:
+    desc: Check if code is buildable
+    cmds:
+      - go build ./...
+    sources:
+      - ./**/*.go
+
+  build-example:
+    desc: Build example project
+    cmds:
+      - go build -C _example -o example{{exeExt}}
+    sources:
+      - ./**/*.go
+    generates:
+      - _example/example{{exeExt}}
+
+  test:
+    desc: Run tests
+    cmds:
+      - go test -v -coverprofile=coverage.txt ./...
+      - go tool cover -html=coverage.txt -o coverage.html
+    sources:
+      - ./**/*.go
+    generates:
+      - coverage.txt
+      - coverage.html
+
+  fmt:
+    desc: Format the code
+    cmds:
+      - golangci-lint fmt
+    sources:
+      - ./**/*.go
+
+  lint:
+    desc: Run linters
+    cmds:
+      - golangci-lint run
+    sources:
+      - ./**/*.go
+
+  lint-autofix:
+    desc: Run linters with autofix (if possible)
+    cmds:
+      - golangci-lint run --fix
+    sources:
+      - ./**/*.go
+
+  install-deps:
+    desc: Install deps
+    cmds:
+      - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin {{.GOLANGCI_LINT_VERSION}}
+    silent: true
